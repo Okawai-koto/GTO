@@ -21,5 +21,22 @@ namespace GTO
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Giris girissayfasi = new Giris();
+            girissayfasi.Show();
+            this.Visible = false;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }
