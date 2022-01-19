@@ -17,10 +17,9 @@ namespace GTO
             InitializeComponent();
         }
 
-        private void Giris_FormClosed(object sender, FormClosedEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+            
         }
     }
 }
