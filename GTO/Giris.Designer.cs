@@ -55,7 +55,7 @@ namespace GTO
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(537, 380);
+            this.label1.Location = new System.Drawing.Point(542, 380);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 2;
@@ -93,6 +93,7 @@ namespace GTO
             this.Controls.Add(this.textBoxGirisKullaniciAdi);
             this.Name = "Giris";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Giris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
