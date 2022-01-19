@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace GTO
 {
-    public partial class Giris : Form
+    public partial class SifremiUnuttum : Form
     {
-        public Giris()
+        public SifremiUnuttum()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Giris_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
