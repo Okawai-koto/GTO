@@ -26,5 +26,11 @@ namespace GTO
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Anasayfa anasayfaNesne = new Anasayfa();
+            anasayfaNesne.Show();
+        }
     }
 }
