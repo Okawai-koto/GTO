@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AnaSayfasi = new System.Windows.Forms.Button();
             this.CuzdanSayfasi = new System.Windows.Forms.Button();
             this.BankaSayfasi = new System.Windows.Forms.Button();
@@ -72,7 +72,6 @@
             this.AnaSayfasi.TabIndex = 0;
             this.AnaSayfasi.Text = "Durum";
             this.AnaSayfasi.UseVisualStyleBackColor = true;
-            this.AnaSayfasi.Click += new System.EventHandler(this.button1_Click);
             // 
             // CuzdanSayfasi
             // 
@@ -94,6 +93,7 @@
             this.BankaSayfasi.TabIndex = 2;
             this.BankaSayfasi.Text = "Banka";
             this.BankaSayfasi.UseVisualStyleBackColor = true;
+            this.BankaSayfasi.Click += new System.EventHandler(this.BankaSayfasi_Click);
             // 
             // GiderlerSayfasi
             // 
@@ -104,6 +104,7 @@
             this.GiderlerSayfasi.TabIndex = 3;
             this.GiderlerSayfasi.Text = "Giderler";
             this.GiderlerSayfasi.UseVisualStyleBackColor = true;
+            this.GiderlerSayfasi.Click += new System.EventHandler(this.GiderlerSayfasi_Click);
             // 
             // GelirlerSayfasi
             // 
@@ -114,6 +115,7 @@
             this.GelirlerSayfasi.TabIndex = 4;
             this.GelirlerSayfasi.Text = "Gelirler";
             this.GelirlerSayfasi.UseVisualStyleBackColor = true;
+            this.GelirlerSayfasi.Click += new System.EventHandler(this.GelirlerSayfasi_Click);
             // 
             // KisilerSayfasi
             // 
@@ -124,6 +126,7 @@
             this.KisilerSayfasi.TabIndex = 5;
             this.KisilerSayfasi.Text = "Kişiler";
             this.KisilerSayfasi.UseVisualStyleBackColor = true;
+            this.KisilerSayfasi.Click += new System.EventHandler(this.KisilerSayfasi_Click);
             // 
             // PersonelSayfasi
             // 
@@ -134,6 +137,7 @@
             this.PersonelSayfasi.TabIndex = 6;
             this.PersonelSayfasi.Text = "Personel";
             this.PersonelSayfasi.UseVisualStyleBackColor = true;
+            this.PersonelSayfasi.Click += new System.EventHandler(this.PersonelSayfasi_Click);
             // 
             // TakvimSayfasi
             // 
@@ -144,6 +148,7 @@
             this.TakvimSayfasi.TabIndex = 7;
             this.TakvimSayfasi.Text = "Takvim";
             this.TakvimSayfasi.UseVisualStyleBackColor = true;
+            this.TakvimSayfasi.Click += new System.EventHandler(this.TakvimSayfasi_Click);
             // 
             // FiyatlarSayfasi
             // 
@@ -154,7 +159,7 @@
             this.FiyatlarSayfasi.TabIndex = 8;
             this.FiyatlarSayfasi.Text = "Fiyatlar";
             this.FiyatlarSayfasi.UseVisualStyleBackColor = true;
-            this.FiyatlarSayfasi.Click += new System.EventHandler(this.button9_Click);
+            this.FiyatlarSayfasi.Click += new System.EventHandler(this.FiyatlarSayfasi_Click);
             // 
             // KarZararSayfasi
             // 
@@ -165,7 +170,7 @@
             this.KarZararSayfasi.TabIndex = 9;
             this.KarZararSayfasi.Text = "Kâr-Zarar";
             this.KarZararSayfasi.UseVisualStyleBackColor = true;
-            this.KarZararSayfasi.Click += new System.EventHandler(this.button10_Click);
+            this.KarZararSayfasi.Click += new System.EventHandler(this.KarZararSayfasi_Click);
             // 
             // TicariMalSayfasi
             // 
@@ -176,7 +181,7 @@
             this.TicariMalSayfasi.TabIndex = 10;
             this.TicariMalSayfasi.Text = "Ticari Mallar";
             this.TicariMalSayfasi.UseVisualStyleBackColor = true;
-            this.TicariMalSayfasi.Click += new System.EventHandler(this.button11_Click);
+            this.TicariMalSayfasi.Click += new System.EventHandler(this.TicariMalSayfasi_Click);
             // 
             // AyarlarSayfasi
             // 
@@ -187,6 +192,7 @@
             this.AyarlarSayfasi.TabIndex = 11;
             this.AyarlarSayfasi.Text = "Ayarlar";
             this.AyarlarSayfasi.UseVisualStyleBackColor = true;
+            this.AyarlarSayfasi.Click += new System.EventHandler(this.AyarlarSayfasi_Click);
             // 
             // panel1
             // 
@@ -208,7 +214,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1082, 652);
             this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -218,7 +223,6 @@
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dolar Fiyatı";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -247,17 +251,17 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea14.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea14);
+            legend14.Name = "Legend1";
+            this.chart1.Legends.Add(legend14);
             this.chart1.Location = new System.Drawing.Point(121, 96);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series14.Legend = "Legend1";
+            series14.Name = "Series1";
+            this.chart1.Series.Add(series14);
             this.chart1.Size = new System.Drawing.Size(255, 194);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -357,7 +361,6 @@
             this.Controls.Add(this.AnaSayfasi);
             this.Name = "Anasayfa";
             this.Text = "Anasayfa";
-            this.Load += new System.EventHandler(this.Anasayfa_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
