@@ -26,5 +26,11 @@ namespace GTO
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KayitOl deneme = new KayitOl();
+            deneme.Show();
+        }
     }
 }
