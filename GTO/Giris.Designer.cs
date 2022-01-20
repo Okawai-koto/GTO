@@ -34,6 +34,8 @@ namespace GTO
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label2KullaniciAdi = new System.Windows.Forms.Label();
+            this.label3Sifre = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxGirisKullaniciAdi
@@ -42,7 +44,6 @@ namespace GTO
             this.textBoxGirisKullaniciAdi.Name = "textBoxGirisKullaniciAdi";
             this.textBoxGirisKullaniciAdi.Size = new System.Drawing.Size(238, 20);
             this.textBoxGirisKullaniciAdi.TabIndex = 0;
-            this.textBoxGirisKullaniciAdi.Text = "Kullanici Adi";
             // 
             // textBoxGirisSifre
             // 
@@ -50,7 +51,6 @@ namespace GTO
             this.textBoxGirisSifre.Name = "textBoxGirisSifre";
             this.textBoxGirisSifre.Size = new System.Drawing.Size(238, 20);
             this.textBoxGirisSifre.TabIndex = 1;
-            this.textBoxGirisSifre.Text = "Sifre";
             // 
             // label1
             // 
@@ -81,12 +81,32 @@ namespace GTO
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label2KullaniciAdi
+            // 
+            this.label2KullaniciAdi.AutoSize = true;
+            this.label2KullaniciAdi.Location = new System.Drawing.Point(396, 245);
+            this.label2KullaniciAdi.Name = "label2KullaniciAdi";
+            this.label2KullaniciAdi.Size = new System.Drawing.Size(67, 13);
+            this.label2KullaniciAdi.TabIndex = 5;
+            this.label2KullaniciAdi.Text = "Kullanici Adi:";
+            // 
+            // label3Sifre
+            // 
+            this.label3Sifre.AutoSize = true;
+            this.label3Sifre.Location = new System.Drawing.Point(429, 291);
+            this.label3Sifre.Name = "label3Sifre";
+            this.label3Sifre.Size = new System.Drawing.Size(31, 13);
+            this.label3Sifre.TabIndex = 6;
+            this.label3Sifre.Text = "Sifre:";
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label3Sifre);
+            this.Controls.Add(this.label2KullaniciAdi);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -107,5 +127,7 @@ namespace GTO
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2KullaniciAdi;
+        private System.Windows.Forms.Label label3Sifre;
     }
 }

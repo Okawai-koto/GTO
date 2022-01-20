@@ -19,7 +19,8 @@ namespace GTO
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            SifremiUnuttum deneme = new SifremiUnuttum();
+            deneme.Show();
         }
 
         private void Giris_Load(object sender, EventArgs e)
