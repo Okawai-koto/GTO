@@ -53,17 +53,71 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="AyarlarSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyarlarSayfasi.Designer.cs">
+      <DependentUpon>AyarlarSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankaSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankaSayfasi.Designer.cs">
+      <DependentUpon>BankaSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CuzdanSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuzdanSayfasi.Designer.cs">
+      <DependentUpon>CuzdanSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiyatlarSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatlarSayfasi.Designer.cs">
+      <DependentUpon>FiyatlarSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirlerSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirlerSayfasi.Designer.cs">
+      <DependentUpon>GelirlerSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderlerSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderlerSayfasi.Designer.cs">
+      <DependentUpon>GiderlerSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Giris.Designer.cs">
       <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
+    <Compile Include="KarZararSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KarZararSayfasi.Designer.cs">
+      <DependentUpon>KarZararSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisilerSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KisilerSayfasi.Designer.cs">
+      <DependentUpon>KisilerSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MailGonderildi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MailGonderildi.Designer.cs">
       <DependentUpon>MailGonderildi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelSayfasi.Designer.cs">
+      <DependentUpon>PersonelSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,8 +127,23 @@
     <Compile Include="SifremiUnuttum.Designer.cs">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
     </Compile>
+    <Compile Include="TakvimSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakvimSayfasi.Designer.cs">
+      <DependentUpon>TakvimSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariMalSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariMalSayfasi.Designer.cs">
+      <DependentUpon>TicariMalSayfasi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuzdanSayfasi.resx">
+      <DependentUpon>CuzdanSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>

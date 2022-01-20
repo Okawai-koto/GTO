@@ -53,5 +53,14 @@ namespace GTO
         {
 
         }
+
+        private void CuzdanSayfasi_Click(object sender, EventArgs e)
+        {
+            CuzdanSayfasi CuzdanSayfasiNesnesi = new CuzdanSayfasi();
+            AnaSayfasi.Hide();
+            CuzdanSayfasiNesnesi.Show();
+
+           
+        }
     }
 }

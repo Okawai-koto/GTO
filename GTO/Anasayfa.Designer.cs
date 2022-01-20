@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.AnaSayfasi = new System.Windows.Forms.Button();
+            this.CuzdanSayfasi = new System.Windows.Forms.Button();
+            this.BankaSayfasi = new System.Windows.Forms.Button();
+            this.GiderlerSayfasi = new System.Windows.Forms.Button();
+            this.GelirlerSayfasi = new System.Windows.Forms.Button();
+            this.KisilerSayfasi = new System.Windows.Forms.Button();
+            this.PersonelSayfasi = new System.Windows.Forms.Button();
+            this.TakvimSayfasi = new System.Windows.Forms.Button();
+            this.FiyatlarSayfasi = new System.Windows.Forms.Button();
+            this.KarZararSayfasi = new System.Windows.Forms.Button();
+            this.TicariMalSayfasi = new System.Windows.Forms.Button();
+            this.AyarlarSayfasi = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -63,129 +63,130 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // AnaSayfasi
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Durum";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AnaSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnaSayfasi.Location = new System.Drawing.Point(12, 6);
+            this.AnaSayfasi.Name = "AnaSayfasi";
+            this.AnaSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.AnaSayfasi.TabIndex = 0;
+            this.AnaSayfasi.Text = "Durum";
+            this.AnaSayfasi.UseVisualStyleBackColor = true;
+            this.AnaSayfasi.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // CuzdanSayfasi
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cüzdan";
-            this.button2.UseVisualStyleBackColor = true;
+            this.CuzdanSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CuzdanSayfasi.Location = new System.Drawing.Point(12, 63);
+            this.CuzdanSayfasi.Name = "CuzdanSayfasi";
+            this.CuzdanSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.CuzdanSayfasi.TabIndex = 1;
+            this.CuzdanSayfasi.Text = "Cüzdan";
+            this.CuzdanSayfasi.UseVisualStyleBackColor = true;
+            this.CuzdanSayfasi.Click += new System.EventHandler(this.CuzdanSayfasi_Click);
             // 
-            // button3
+            // BankaSayfasi
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 120);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 50);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Banka";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BankaSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BankaSayfasi.Location = new System.Drawing.Point(12, 120);
+            this.BankaSayfasi.Name = "BankaSayfasi";
+            this.BankaSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.BankaSayfasi.TabIndex = 2;
+            this.BankaSayfasi.Text = "Banka";
+            this.BankaSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // GiderlerSayfasi
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(12, 176);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 50);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Giderler";
-            this.button4.UseVisualStyleBackColor = true;
+            this.GiderlerSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GiderlerSayfasi.Location = new System.Drawing.Point(12, 176);
+            this.GiderlerSayfasi.Name = "GiderlerSayfasi";
+            this.GiderlerSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.GiderlerSayfasi.TabIndex = 3;
+            this.GiderlerSayfasi.Text = "Giderler";
+            this.GiderlerSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // GelirlerSayfasi
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 230);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 50);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Gelirler";
-            this.button5.UseVisualStyleBackColor = true;
+            this.GelirlerSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GelirlerSayfasi.Location = new System.Drawing.Point(12, 230);
+            this.GelirlerSayfasi.Name = "GelirlerSayfasi";
+            this.GelirlerSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.GelirlerSayfasi.TabIndex = 4;
+            this.GelirlerSayfasi.Text = "Gelirler";
+            this.GelirlerSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // KisilerSayfasi
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 284);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 50);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Kişiler";
-            this.button6.UseVisualStyleBackColor = true;
+            this.KisilerSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KisilerSayfasi.Location = new System.Drawing.Point(12, 284);
+            this.KisilerSayfasi.Name = "KisilerSayfasi";
+            this.KisilerSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.KisilerSayfasi.TabIndex = 5;
+            this.KisilerSayfasi.Text = "Kişiler";
+            this.KisilerSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // PersonelSayfasi
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 338);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(80, 50);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Personel";
-            this.button7.UseVisualStyleBackColor = true;
+            this.PersonelSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonelSayfasi.Location = new System.Drawing.Point(12, 338);
+            this.PersonelSayfasi.Name = "PersonelSayfasi";
+            this.PersonelSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.PersonelSayfasi.TabIndex = 6;
+            this.PersonelSayfasi.Text = "Personel";
+            this.PersonelSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // TakvimSayfasi
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(12, 392);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(80, 50);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Takvim";
-            this.button8.UseVisualStyleBackColor = true;
+            this.TakvimSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TakvimSayfasi.Location = new System.Drawing.Point(12, 392);
+            this.TakvimSayfasi.Name = "TakvimSayfasi";
+            this.TakvimSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.TakvimSayfasi.TabIndex = 7;
+            this.TakvimSayfasi.Text = "Takvim";
+            this.TakvimSayfasi.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // FiyatlarSayfasi
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(12, 446);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(80, 50);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Fiyatlar";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.FiyatlarSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FiyatlarSayfasi.Location = new System.Drawing.Point(12, 446);
+            this.FiyatlarSayfasi.Name = "FiyatlarSayfasi";
+            this.FiyatlarSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.FiyatlarSayfasi.TabIndex = 8;
+            this.FiyatlarSayfasi.Text = "Fiyatlar";
+            this.FiyatlarSayfasi.UseVisualStyleBackColor = true;
+            this.FiyatlarSayfasi.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // KarZararSayfasi
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(12, 500);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(80, 50);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Kâr-Zarar";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.KarZararSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KarZararSayfasi.Location = new System.Drawing.Point(12, 500);
+            this.KarZararSayfasi.Name = "KarZararSayfasi";
+            this.KarZararSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.KarZararSayfasi.TabIndex = 9;
+            this.KarZararSayfasi.Text = "Kâr-Zarar";
+            this.KarZararSayfasi.UseVisualStyleBackColor = true;
+            this.KarZararSayfasi.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button11
+            // TicariMalSayfasi
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(12, 554);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(80, 50);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "Ticari Mallar";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.TicariMalSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicariMalSayfasi.Location = new System.Drawing.Point(12, 554);
+            this.TicariMalSayfasi.Name = "TicariMalSayfasi";
+            this.TicariMalSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.TicariMalSayfasi.TabIndex = 10;
+            this.TicariMalSayfasi.Text = "Ticari Mallar";
+            this.TicariMalSayfasi.UseVisualStyleBackColor = true;
+            this.TicariMalSayfasi.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button12
+            // AyarlarSayfasi
             // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(12, 608);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(80, 50);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "Ayarlar";
-            this.button12.UseVisualStyleBackColor = true;
+            this.AyarlarSayfasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyarlarSayfasi.Location = new System.Drawing.Point(12, 608);
+            this.AyarlarSayfasi.Name = "AyarlarSayfasi";
+            this.AyarlarSayfasi.Size = new System.Drawing.Size(80, 50);
+            this.AyarlarSayfasi.TabIndex = 11;
+            this.AyarlarSayfasi.Text = "Ayarlar";
+            this.AyarlarSayfasi.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -246,17 +247,17 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(121, 96);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(255, 194);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
@@ -339,21 +340,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AyarlarSayfasi);
+            this.Controls.Add(this.TicariMalSayfasi);
+            this.Controls.Add(this.KarZararSayfasi);
+            this.Controls.Add(this.FiyatlarSayfasi);
+            this.Controls.Add(this.TakvimSayfasi);
+            this.Controls.Add(this.PersonelSayfasi);
+            this.Controls.Add(this.KisilerSayfasi);
+            this.Controls.Add(this.GelirlerSayfasi);
+            this.Controls.Add(this.GiderlerSayfasi);
+            this.Controls.Add(this.BankaSayfasi);
+            this.Controls.Add(this.CuzdanSayfasi);
+            this.Controls.Add(this.AnaSayfasi);
             this.Name = "Anasayfa";
             this.Text = "Anasayfa";
             this.Load += new System.EventHandler(this.Anasayfa_Load);
@@ -368,18 +369,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button AnaSayfasi;
+        private System.Windows.Forms.Button CuzdanSayfasi;
+        private System.Windows.Forms.Button BankaSayfasi;
+        private System.Windows.Forms.Button GiderlerSayfasi;
+        private System.Windows.Forms.Button GelirlerSayfasi;
+        private System.Windows.Forms.Button KisilerSayfasi;
+        private System.Windows.Forms.Button PersonelSayfasi;
+        private System.Windows.Forms.Button TakvimSayfasi;
+        private System.Windows.Forms.Button FiyatlarSayfasi;
+        private System.Windows.Forms.Button KarZararSayfasi;
+        private System.Windows.Forms.Button TicariMalSayfasi;
+        private System.Windows.Forms.Button AyarlarSayfasi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
