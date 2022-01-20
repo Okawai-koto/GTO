@@ -16,5 +16,11 @@ namespace GTO
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Giris giris = new Giris();
+            giris.Show();
+        }
     }
 }

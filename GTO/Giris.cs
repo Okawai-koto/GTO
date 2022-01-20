@@ -33,5 +33,16 @@ namespace GTO
             KayitOl deneme = new KayitOl();
             deneme.Show();
         }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            buttonGirisYap.BackColor = Color.Tomato;
+            
+        }
+
+        private void buttonGirisYap_MouseLeave(object sender, EventArgs e)
+        {
+            buttonGirisYap.BackColor = Color.Gray;
+        }
     }
 }

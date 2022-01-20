@@ -25,7 +25,9 @@ namespace GTO
             //veritabani kontrolu burada olacak
             if (emailKontrolfo.IsMatch(textBoxSifremiUnuttum_Eposta.Text))
             {
-                MessageBox.Show("basarili kisim bura");
+                
+                MailGonderildi mailgonderildi = new MailGonderildi();
+                mailgonderildi.Show();
             }
 
             else
