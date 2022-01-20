@@ -44,5 +44,15 @@ namespace GTO
         {
             buttonGirisYap.BackColor = Color.Gray;
         }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            buttonKayitOl.BackColor = Color.Tomato;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            buttonKayitOl.BackColor = Color.Gray;
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace GTO
             this.textBoxGirisSifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonGirisYap = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonKayitOl = new System.Windows.Forms.Button();
             this.label2KullaniciAdi = new System.Windows.Forms.Label();
             this.label3Sifre = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -78,15 +78,17 @@ namespace GTO
             this.buttonGirisYap.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.buttonGirisYap.MouseLeave += new System.EventHandler(this.buttonGirisYap_MouseLeave);
             // 
-            // button2
+            // buttonKayitOl
             // 
-            this.button2.Location = new System.Drawing.Point(530, 410);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Kayit Ol";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonKayitOl.Location = new System.Drawing.Point(530, 410);
+            this.buttonKayitOl.Name = "buttonKayitOl";
+            this.buttonKayitOl.Size = new System.Drawing.Size(101, 23);
+            this.buttonKayitOl.TabIndex = 4;
+            this.buttonKayitOl.Text = "Kayit Ol";
+            this.buttonKayitOl.UseVisualStyleBackColor = true;
+            this.buttonKayitOl.Click += new System.EventHandler(this.button2_Click);
+            this.buttonKayitOl.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
+            this.buttonKayitOl.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // label2KullaniciAdi
             // 
@@ -115,12 +117,12 @@ namespace GTO
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.label3Sifre);
             this.Controls.Add(this.label2KullaniciAdi);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonKayitOl);
             this.Controls.Add(this.buttonGirisYap);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxGirisSifre);
             this.Controls.Add(this.textBoxGirisKullaniciAdi);
-            this.Cursor = System.Windows.Forms.Cursors.No;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Giris";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Giris_Load);
@@ -135,7 +137,7 @@ namespace GTO
         private System.Windows.Forms.TextBox textBoxGirisSifre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonGirisYap;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonKayitOl;
         private System.Windows.Forms.Label label2KullaniciAdi;
         private System.Windows.Forms.Label label3Sifre;
     }
