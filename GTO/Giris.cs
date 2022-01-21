@@ -27,11 +27,10 @@ namespace GTO
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            KayitOl deneme = new KayitOl();
-            deneme.Show();
+            Anasayfa anasayfaNesne = new Anasayfa();
+            anasayfaNesne.Show();
         }
 
         private void button1_MouseEnter(object sender, EventArgs e)
