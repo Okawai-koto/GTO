@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql;
+using MySql.Data.MySqlClient;
 
 namespace GTO
 {
@@ -22,10 +25,24 @@ namespace GTO
             SifremiUnuttum deneme = new SifremiUnuttum();
             deneme.Show();
         }
+        //Database Bağlantısı
+        MySqlConnection db = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=gto");
 
         private void Giris_Load(object sender, EventArgs e)
-        {
-
+        {            
+            try
+            {
+                db.Open();
+                label2.Text = "Veritabanı Bağlantısı: OK";
+                label2.ForeColor = Color.BlueViolet;
+            }
+            catch (Exception)
+            {
+                label2.Text = "Veritabanı Bağlantısı: BAD";
+                label2.BackColor = Color.DarkRed;
+                MessageBox.Show("Veritabanı Bağlantısında Hata İle Karşılaşıldı", "DB PROBLEM");
+                throw;
+            }
         }
         private void button3_Click(object sender, EventArgs e)
         {
