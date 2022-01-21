@@ -25,17 +25,20 @@ namespace GTO
             SifremiUnuttum deneme = new SifremiUnuttum();
             deneme.Show();
         }
-        //Database Bağlantısı
-        MySqlConnection db = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=gto");
+        //Database Değişkenleri
+        MySqlConnection db;
+        MySqlCommand cmd;
+        MySqlDataReader dr;
 
         private void Giris_Load(object sender, EventArgs e)
         {
-            MySqlConnection db = dBConnection.dBConnect();
+            db = dBConnection.dBConnect();
             if (db != null)
             {
                 db.Open();
                 label2.Text = "Veritabanı Bağlantısı: OK";
                 label2.ForeColor = Color.BlueViolet;
+                db.Close();
             }
             else
             {
@@ -73,7 +76,18 @@ namespace GTO
 
         private void buttonGirisYap_Click(object sender, EventArgs e)
         {
-            
+            db.Open();
+            cmd = new MySqlCommand();
+            cmd.Connection = db;
+            cmd.CommandText = "SELECT * FROM kullanicilar where kullaniciAdi='" + textBoxGirisKullaniciAdi.Text + "' AND sifre='" + textBoxGirisSifre.Text + "'";
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                Anasayfa ana = new Anasayfa();
+                ana.Show();
+                this.Hide();
+            }
+            db.Close();
         }
 
         private void buttonKayitOl_Click(object sender, EventArgs e)
