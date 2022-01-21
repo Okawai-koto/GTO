@@ -193,6 +193,7 @@ namespace GTO
             this.Controls.Add(this.textBoxKullaniciAdi);
             this.Name = "KayitOl";
             this.Text = "KayitOl";
+            this.Load += new System.EventHandler(this.KayitOl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
