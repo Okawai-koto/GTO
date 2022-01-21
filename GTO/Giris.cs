@@ -29,19 +29,19 @@ namespace GTO
         MySqlConnection db = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=gto");
 
         private void Giris_Load(object sender, EventArgs e)
-        {            
-            try
+        {
+            MySqlConnection db = dBConnection.dBConnect();
+            if (db != null)
             {
                 db.Open();
                 label2.Text = "Veritabanı Bağlantısı: OK";
                 label2.ForeColor = Color.BlueViolet;
             }
-            catch (Exception)
+            else
             {
                 label2.Text = "Veritabanı Bağlantısı: BAD";
                 label2.BackColor = Color.DarkRed;
                 MessageBox.Show("Veritabanı Bağlantısında Hata İle Karşılaşıldı", "DB PROBLEM");
-                throw;
             }
         }
         private void button3_Click(object sender, EventArgs e)
@@ -69,6 +69,18 @@ namespace GTO
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             buttonKayitOl.BackColor = Color.Gray;
+        }
+
+        private void buttonGirisYap_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonKayitOl_Click(object sender, EventArgs e)
+        {
+            KayitOl kayit = new KayitOl();
+            kayit.Show();
+            this.Hide();
         }
     }
 }

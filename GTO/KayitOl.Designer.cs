@@ -51,6 +51,7 @@ namespace GTO
             this.textBoxKullaniciAdi.Name = "textBoxKullaniciAdi";
             this.textBoxKullaniciAdi.Size = new System.Drawing.Size(191, 20);
             this.textBoxKullaniciAdi.TabIndex = 0;
+            this.textBoxKullaniciAdi.Text = "test";
             this.textBoxKullaniciAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKullaniciAdi_KeyPress);
             // 
             // textBoxSirketAdi
@@ -59,6 +60,7 @@ namespace GTO
             this.textBoxSirketAdi.Name = "textBoxSirketAdi";
             this.textBoxSirketAdi.Size = new System.Drawing.Size(191, 20);
             this.textBoxSirketAdi.TabIndex = 1;
+            this.textBoxSirketAdi.Text = "test";
             this.textBoxSirketAdi.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBoxSirketAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSirketAdi_KeyPress);
             // 
@@ -68,6 +70,7 @@ namespace GTO
             this.textBoxVergiDairesiNo.Name = "textBoxVergiDairesiNo";
             this.textBoxVergiDairesiNo.Size = new System.Drawing.Size(191, 20);
             this.textBoxVergiDairesiNo.TabIndex = 2;
+            this.textBoxVergiDairesiNo.Text = "1234567890";
             this.textBoxVergiDairesiNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVergiDairesiNo_KeyPress);
             // 
             // textBoxEposta
@@ -76,6 +79,7 @@ namespace GTO
             this.textBoxEposta.Name = "textBoxEposta";
             this.textBoxEposta.Size = new System.Drawing.Size(191, 20);
             this.textBoxEposta.TabIndex = 3;
+            this.textBoxEposta.Text = "test@gmail.com";
             // 
             // textBoxSifre
             // 
@@ -83,6 +87,7 @@ namespace GTO
             this.textBoxSifre.Name = "textBoxSifre";
             this.textBoxSifre.Size = new System.Drawing.Size(191, 20);
             this.textBoxSifre.TabIndex = 4;
+            this.textBoxSifre.Text = "Ttest123T";
             // 
             // textBoxSifreTekrar
             // 
@@ -90,6 +95,7 @@ namespace GTO
             this.textBoxSifreTekrar.Name = "textBoxSifreTekrar";
             this.textBoxSifreTekrar.Size = new System.Drawing.Size(191, 20);
             this.textBoxSifreTekrar.TabIndex = 5;
+            this.textBoxSifreTekrar.Text = "Ttest123T";
             // 
             // KayitOlButon
             // 

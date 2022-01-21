@@ -102,13 +102,13 @@ namespace GTO
                 MessageBox.Show("Sifre kurallara uygun degil lutfen yeniden yaziniz");
             }
 
+
+
             
         }
 
         private void textBoxKullaniciAdi_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-
             if (char.IsDigit(e.KeyChar)  || char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -116,8 +116,7 @@ namespace GTO
             else
             {
                 e.Handled = true;
-            }
-            
+            }            
         }
 
         private void textBoxSirketAdi_KeyPress(object sender, KeyPressEventArgs e)

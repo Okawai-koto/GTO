@@ -79,6 +79,7 @@ namespace GTO
             this.buttonGirisYap.TabIndex = 3;
             this.buttonGirisYap.Text = "Giris Yap";
             this.buttonGirisYap.UseVisualStyleBackColor = true;
+            this.buttonGirisYap.Click += new System.EventHandler(this.buttonGirisYap_Click);
             this.buttonGirisYap.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.buttonGirisYap.MouseLeave += new System.EventHandler(this.buttonGirisYap_MouseLeave);
             // 
@@ -90,6 +91,7 @@ namespace GTO
             this.buttonKayitOl.TabIndex = 4;
             this.buttonKayitOl.Text = "Kayit Ol";
             this.buttonKayitOl.UseVisualStyleBackColor = true;
+            this.buttonKayitOl.Click += new System.EventHandler(this.buttonKayitOl_Click);
             this.buttonKayitOl.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             this.buttonKayitOl.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
