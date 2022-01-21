@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using MySql.Data.MySqlClient;
 
 namespace GTO
 {
@@ -44,7 +45,7 @@ namespace GTO
 
         private void KayitOlButon_Click(object sender, EventArgs e)
         {
-
+            bool check = true;
             if (kullaniciAdiKontrol.IsMatch(textBoxKullaniciAdi.Text))
             {
                  kullaniciAdi = textBoxKullaniciAdi.Text;
@@ -52,6 +53,7 @@ namespace GTO
             else
             {
                 MessageBox.Show("Kullanici adi gerekli kriterlere sahip degil");
+                check = false;
             }
 
 
@@ -62,6 +64,7 @@ namespace GTO
             else
             {
                 MessageBox.Show("sirket adi gerekli kriterlere sahip degil");
+                check = false;
             }
 
             if (vergiDairesiNoKontrol.IsMatch(textBoxVergiDairesiNo.Text))
@@ -71,6 +74,7 @@ namespace GTO
             else
             {
                 MessageBox.Show("vergi no gerekli kriterlere sahip degil");
+                check = false;
             }
 
 
@@ -83,6 +87,7 @@ namespace GTO
             else
             {
                 MessageBox.Show("Hatalı E-posta");
+                check = false;
             }
                 
 
@@ -95,20 +100,27 @@ namespace GTO
                 else
                 {
                     MessageBox.Show("Sifreler ayni degil");
+                    check = false;
                 }
             }
             else
             {
                 MessageBox.Show("Sifre kurallara uygun degil lutfen yeniden yaziniz");
+                check = false;
             }
 
-            
+            if (check == true)
+            {
+                db.Open();
+                cmd = new MySqlCommand();
+                cmd.Connection = db;
+                cmd.CommandText = "INSERT INTO kullanicilar (kullaniciAdi,sifre,sirketAdi,vergiNo,ePosta) VALUES('" + kullaniciAdi + "','" + sifre + "','" + sirketAdi + "','" + vergiDairesiNo + "','" + ePosta + "')";
+                cmd.ExecuteNonQuery();
+            }
         }
 
         private void textBoxKullaniciAdi_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-
             if (char.IsDigit(e.KeyChar)  || char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -116,8 +128,7 @@ namespace GTO
             else
             {
                 e.Handled = true;
-            }
-            
+            }            
         }
 
         private void textBoxSirketAdi_KeyPress(object sender, KeyPressEventArgs e)
@@ -141,6 +152,25 @@ namespace GTO
             else
             {
                 e.Handled = true;
+            }
+        }
+
+        //Database Değişkenleri
+        MySqlConnection db;
+        MySqlCommand cmd;
+        MySqlDataReader dr;
+
+        private void KayitOl_Load(object sender, EventArgs e)
+        {
+            db = dBConnection.dBConnect();
+            if (db != null)
+            {
+                db.Open();
+                db.Close();
+            }
+            else
+            {
+                MessageBox.Show("Veritabanı Bağlantısında Hata İle Karşılaşıldı", "DB PROBLEM");
             }
         }
     }
