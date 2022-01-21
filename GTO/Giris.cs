@@ -19,7 +19,8 @@ namespace GTO
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+            SifremiUnuttum deneme = new SifremiUnuttum();
+            deneme.Show();
         }
 
         private void Giris_Load(object sender, EventArgs e)
@@ -30,6 +31,27 @@ namespace GTO
         {
             Anasayfa anasayfaNesne = new Anasayfa();
             anasayfaNesne.Show();
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            buttonGirisYap.BackColor = Color.Tomato;
+            
+        }
+
+        private void buttonGirisYap_MouseLeave(object sender, EventArgs e)
+        {
+            buttonGirisYap.BackColor = Color.Gray;
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            buttonKayitOl.BackColor = Color.Tomato;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            buttonKayitOl.BackColor = Color.Gray;
         }
     }
 }

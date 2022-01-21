@@ -7,14 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace GTO
 {
     public partial class SifremiUnuttum : Form
     {
+        Regex emailKontrolfo = new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");
+
         public SifremiUnuttum()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //veritabani kontrolu burada olacak
+            if (emailKontrolfo.IsMatch(textBoxSifremiUnuttum_Eposta.Text))
+            {
+                
+                MailGonderildi mailgonderildi = new MailGonderildi();
+                mailgonderildi.Show();
+            }
+
+            else
+            {
+                MessageBox.Show("Hatalı E-posta");
+            }
         }
     }
 }
