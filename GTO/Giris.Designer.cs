@@ -32,10 +32,14 @@ namespace GTO
             this.textBoxGirisKullaniciAdi = new System.Windows.Forms.TextBox();
             this.textBoxGirisSifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+
             this.buttonGirisYap = new System.Windows.Forms.Button();
             this.buttonKayitOl = new System.Windows.Forms.Button();
             this.label2KullaniciAdi = new System.Windows.Forms.Label();
             this.label3Sifre = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxGirisKullaniciAdi
@@ -108,6 +112,16 @@ namespace GTO
             this.label3Sifre.TabIndex = 6;
             this.label3Sifre.Text = "Sifre:";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(791, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "GoAnasayfa";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +133,9 @@ namespace GTO
             this.Controls.Add(this.label2KullaniciAdi);
             this.Controls.Add(this.buttonKayitOl);
             this.Controls.Add(this.buttonGirisYap);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxGirisSifre);
             this.Controls.Add(this.textBoxGirisKullaniciAdi);
@@ -140,5 +157,8 @@ namespace GTO
         private System.Windows.Forms.Button buttonKayitOl;
         private System.Windows.Forms.Label label2KullaniciAdi;
         private System.Windows.Forms.Label label3Sifre;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
