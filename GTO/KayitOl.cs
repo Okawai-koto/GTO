@@ -111,11 +111,11 @@ namespace GTO
 
             if (char.IsDigit(e.KeyChar)  || char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
             {
-                e.Handled = false;
+                e.Handled = true;
             }
             else
             {
-                e.Handled = true;
+                e.Handled = false;
             }
             
         }

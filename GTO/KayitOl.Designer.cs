@@ -93,7 +93,7 @@ namespace GTO
             // 
             // KayitOlButon
             // 
-            this.KayitOlButon.Location = new System.Drawing.Point(529, 280);
+            this.KayitOlButon.Location = new System.Drawing.Point(521, 295);
             this.KayitOlButon.Name = "KayitOlButon";
             this.KayitOlButon.Size = new System.Drawing.Size(75, 23);
             this.KayitOlButon.TabIndex = 6;
