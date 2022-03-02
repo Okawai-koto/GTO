@@ -32,7 +32,6 @@ namespace GTO
             this.textBoxGirisKullaniciAdi = new System.Windows.Forms.TextBox();
             this.textBoxGirisSifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-
             this.buttonGirisYap = new System.Windows.Forms.Button();
             this.buttonKayitOl = new System.Windows.Forms.Button();
             this.label2KullaniciAdi = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@ namespace GTO
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxGirisKullaniciAdi
@@ -79,6 +79,7 @@ namespace GTO
             this.buttonGirisYap.TabIndex = 3;
             this.buttonGirisYap.Text = "Giris Yap";
             this.buttonGirisYap.UseVisualStyleBackColor = true;
+            this.buttonGirisYap.Click += new System.EventHandler(this.buttonGirisYap_Click);
             this.buttonGirisYap.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.buttonGirisYap.MouseLeave += new System.EventHandler(this.buttonGirisYap_MouseLeave);
             // 
@@ -90,7 +91,7 @@ namespace GTO
             this.buttonKayitOl.TabIndex = 4;
             this.buttonKayitOl.Text = "Kayit Ol";
             this.buttonKayitOl.UseVisualStyleBackColor = true;
-            this.buttonKayitOl.Click += new System.EventHandler(this.button2_Click);
+            this.buttonKayitOl.Click += new System.EventHandler(this.buttonKayitOl_Click);
             this.buttonKayitOl.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             this.buttonKayitOl.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
@@ -112,6 +113,20 @@ namespace GTO
             this.label3Sifre.TabIndex = 6;
             this.label3Sifre.Text = "Sifre:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 7;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(791, 12);
@@ -122,6 +137,16 @@ namespace GTO
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(984, 632);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(166, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Veritabanı Bağlantısı : ";
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,6 +154,7 @@ namespace GTO
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3Sifre);
             this.Controls.Add(this.label2KullaniciAdi);
             this.Controls.Add(this.buttonKayitOl);
@@ -160,5 +186,6 @@ namespace GTO
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
     }
 }
